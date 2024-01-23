@@ -1,0 +1,353 @@
+body {
+  width: auto;
+  height: 96vh;
+  font-family: Arial, sans-serif;
+  box-shadow: inset 0 0 0 100000px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+#main {
+  margin-top: 20px;
+}
+
+#background-settings,
+#quick-links {
+  margin-bottom: 20px;
+}
+
+#background-url {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#new-link,
+#new-link-title {
+  display: flex;
+  flex-direction: column;
+}
+
+#set-background,
+#add-link {
+  background-color: #364636;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#quick-links-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#quick-links-list li {
+  margin-top: 5px;
+}
+
+section {
+  padding-top: 4rem;
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  z-index: 2;
+}
+
+.lidiv {
+  position: static;
+  z-index: 1;
+}
+
+details {
+  text-align: center;
+  float: right;
+  margin-left: 50px;
+  margin-right: 1rem;
+  /* Adjust spacing between details elements */
+}
+
+details:last-child {
+  margin-right: 0;
+  /* Remove margin from the last details element */
+}
+
+details[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 230px;
+  text-align: center;
+  padding: 0.5rem 15px;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 300;
+  list-style: none;
+  color: #fff;
+}
+
+details summary:after {
+  display: inline-block;
+  content: "+";
+  color: black;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 200;
+  transform-origin: center;
+  transition: 200ms linear;
+}
+
+details[open] summary:after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+
+details summary {
+  outline: 0;
+}
+
+details p {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #8ac2c5;
+  font-size: 12px;
+}
+
+/* Style for the entire list */
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  translate: 0 380px;
+}
+
+/* Style for list items */
+li {
+  width: 20%;
+  padding: 20px;
+  margin: 30px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #423f3f;
+}
+
+/* Add some hover effect */
+li a:hover {
+  color: rgb(111, 136, 136);
+}
+
+/* Style for nested lists */
+ul ul {
+  margin-left: 20px;
+  /* Adjust the indentation for nested lists */
+}
+
+/* Style for links inside list items */
+li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Add some style when a link inputis hovered */
+li a:hover {
+  text-decoration: underline;
+}
+
+#remove {
+  margin-left: 135px;
+  float: right;
+}
+
+.bar {
+  margin: 0 30px;
+  width: 575px;
+  border-radius: 30px;
+  border: 1px solid #dcdcdc;
+  translate: 350px 300px;
+}
+
+.searchbar::placeholder {
+  color: #fff;
+}
+
+.bar:hover {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+.bar:focus-within {
+  outline: none;
+}
+
+.searchbar {
+  height: 49px;
+  border: none;
+  width: 500px;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+  color: #dcdcdc;
+}
+
+.button {
+  background-color: #f5f5f5;
+  border: none;
+  color: #707070;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  outline: none;
+  translate: 610px 350px;
+}
+
+.button:hover {
+  color: #202720;
+  cursor: pointer;
+}
+
+.button:focus {
+  border: 1px solid #4885ed;
+  padding: 9px 19px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+  font-family: 'Lato', sans-serif;
+  translate: 460px 200px;
+  .date {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    &#printDate {
+      color: #b9b1b0;
+    }
+    &#printDay {
+      margin: 0 20px;
+      color: #b9b1b0;
+    }
+    &#printTime {
+      color: #b9b1b0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  *{
+    overflow: hidden;
+  }
+
+  section {
+    width: 100%;
+    right: 0;
+  }
+
+  details {
+    float: center;
+    translate: 0 0;
+    position: relative;
+  }
+  .login-box .user-box input {
+    width: 100%;
+    padding: 1px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    display: none;
+  }
+
+  .bar {
+    display: block;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: calc(90% - 20px);
+    translate: 0 390px;
+    position: absolute;
+  }
+
+  .searchbar {
+    width: calc(100% - 10px);
+  }
+
+  .button {
+    translate: 120px 490px;
+    position: absolute;
+  }
+
+  .container {
+    align-items: center;
+    text-align: center;
+    translate: 0 0px;
+    font-size: 3px;
+    
+      .date {
+        padding-left: 7px;
+        font-size: 16px;
+      }
+  }
+}

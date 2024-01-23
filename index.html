@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Custom Homepage Extension</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="main">
+
+    <div class="container">
+      <div class="date" id="printDate"></div>
+      <div class="date" id="printDay"></div>
+      <div class="date" id="printTime"></div>
+    </div>
+
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+      <div class="bar">
+        <input class="searchbar" type="text" name="q" placeholder="Search Google..." role="combobox" aria-autocomplete="both"  autocomplete="off">
+      </div>
+      <button class="button" type="submit">Search</button>
+  </form>
+   
+
+    <div id="quick-links">
+     
+      
+      <section>
+        <details>
+          <summary>Add Quick links</summary>
+          <p>
+            <div class="login-box">
+              <form>
+                <div class="user-box">
+                  <input type="text" id="new-link-title" placeholder="Add a title">
+                  <label>Title</label>
+                </div>
+                <div class="user-box">
+                  <input type="text" id="new-link" placeholder="Paste a new link">
+                  <label>Link</label>
+                </div>
+            
+              </form>
+            </div>
+            
+         
+            <button id="add-link">Add Link</button>
+          </p>
+        </details>
+        <details>
+          <summary>change background  </summary>
+            <p>
+              <div class="login-box">
+                <form>
+              <div class="user-box">
+                <input type="text" id="background-url" placeholder="Enter background-image url">
+                <label>background url</label>
+              </div>
+              </form> 
+              </div>
+              <button id="set-background">Set Background</button>
+              <img id="back-image" src="">
+          
+            </p>
+        </details>
+      </section>
+   
+    </div>
+    <div class="lidiv">
+      <ul id="quick-links-list"></ul>
+    </div>
+    
+    <!-- Add other sections like search bar, weather, news, to-do list, notes, etc. -->
+
+
+
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

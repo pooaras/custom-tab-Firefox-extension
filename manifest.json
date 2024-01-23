@@ -1,0 +1,22 @@
+{
+    "manifest_version":2,
+    "name": "pooarasu's extension",
+    "version": "1.0",
+    "description": "my first extension",
+    "content_scripts": [
+        {
+            "matches": ["*://*.google.com/search?*"],
+            "js": ["main.js"]
+        }
+    ]
+    ,
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "chrome_url_overrides":{
+        "newtab":"index.html"
+    }
+
+
+}
