@@ -4,9 +4,9 @@ It is published in Firefox add-ons.
  
 To test and run this extension, follow the steps.
 1) Open the Firefox browser and in the search bar type
-'''sh
+```sh
       about:debugging
-'''
+```
 3) Click on this Firefox option and select the load temporary add-on.
 4) Now choose your manifest.json file and click enter.
 5) Now the extension has been added to your browser.
