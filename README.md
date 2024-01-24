@@ -1,6 +1,7 @@
 This is my first extension. It allows users to add or remove quick links, change the background image, and view the current date and time. It is accomplished using HTML, CSS, and JS.
 It is published in Firefox add-ons.
-###Getting Started
+
+### Getting Started
  
 To test and run this extension, follow the steps.
 1) Open the Firefox browser and in the search bar type
